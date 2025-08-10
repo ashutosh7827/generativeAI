@@ -12,15 +12,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.pic
-{
-    width:10%;
-}
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   background: #f8f9fa;
+}
+
+.pic
+{
+    width:10%;
+
 }
 nav {
   background: #111;
@@ -64,15 +65,47 @@ nav ul li a {
   margin-top: 20px;
   border-radius:5px;
 }
-
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+.feature-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.feature {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+form button {
+  background: #3b82f6;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
 </style>
 <body>
 
   <header>
     <nav>
-      <div class="logo">
-        <img src="images/logo.png" class="pic">
-      </div>
+      <div class="logo"><img src="images/logo.png" class="pic"></div>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#features">Features</a></li>
@@ -86,6 +119,72 @@ nav ul li a {
     </div>
   </header>
 
+  <section id="about">
+    <h2>About Generative AI</h2>
+    <p>Generative AI refers to artificial intelligence that can generate text, images, videos, and code using large-scale models trained on huge datasets. It is used in art, writing, design, Generative AI is a branch of artificial intelligence that creates new content—such as text, images, music, videos, or code—by learning patterns from large datasets. Unlike traditional AI, which focuses on analysis or prediction, Generative AI uses advanced models (like GPT, DALL·E, or Stable Diffusion) to produce original outputs based on a given prompt. It’s widely used in creative fields, automation, and content generation, but also raises concerns about accuracy, copyright, and ethics.coding, and more.Generative AI has become a revolutionary tool in the realm of website creation by offering solutions that streamline design processes and increase scalability. By leveraging generative AI models, businesses and web creators can automate the generation of personalized and interactive content, leading to more immersive and tailored online experiences. Furthermore, generative AI opens up possibilities for designing visually appealing websites, crafting compelling narratives and delivering customized user interactions, ultimately shaping the future of web design and content creation.</p>
+  </section>
+
+  <section id="features">
+    <h2>Key Features</h2>
+    <div class="feature-boxes">
+      <div class="feature">
+        <h3>Text Generation</h3>
+        <p>Generate blog posts, emails, scripts, and more.</p>
+      </div>
+      <div class="feature">
+        <h3>Image Creation</h3>
+        <p>Create stunning AI-generated images from prompts.</p>
+      </div>
+      <div class="feature">
+        <h3>Code Writing</h3>
+        <p>Build code with AI assistance for any project.</p>
+      </div>
+       <div class="feature">
+        <h3>Productivity Tools</h3>
+        <p>Integrate AI into workflows to save time.</p>
+      </div>
+       <div class="feature">
+        <h3> Design & Creative Tools</h3>
+        <p>For UI/UX design, branding, and creative projects.</p>
+      </div>
+       <div class="feature">
+        <h3>Voice & Speech Tools</h3>
+        <p>Work with audio — text-to-speech, speech-to-text, and voice cloning.
+    </div>
+    <div class="feature">
+        <h3> Chat & Writing Assistants</h3>
+        <p>Used for generating text, answering questions, summarizing, translating, and creating content.
+
+.
+    </div>
+    </div>
+    
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formResponse"></p>
+
+
+    
+  </section>
+
   
+
+  
+
+  
+
+  <script>document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  document.getElementById('formResponse').textContent = "Thank you! We'll get back to you soon.";
+  this.reset();
+});</script>
 </body>
 </html>
