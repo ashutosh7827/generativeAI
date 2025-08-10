@@ -15,8 +15,18 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  background: #f8f9fa;
+  background:black;
 }
+
+:root
+  {
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+
+  }
+
 
 .pic
 {
@@ -68,20 +78,41 @@ nav ul li a {
 section {
   padding: 50px 20px;
   text-align: center;
+  color:white;
+}
+
+section p
+{
+  text-align:justify;
 }
 .feature-boxes {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  padding: 2rem 0 1rem;
 }
 .feature {
-  background: white;
+  background: black;
   border: 1px solid #ccc;
   padding: 20px;
   width: 250px;
   border-radius: 8px;
+  color:white;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px  solid white;
+
 }
+#contact
+{
+  background:black;
+}
+#contact h2
+{
+  color:white;
+}
+
+
 form {
   display: flex;
   flex-direction: column;
@@ -92,6 +123,7 @@ form {
 form input, form textarea {
   padding: 10px;
   border: 1px solid #ccc;
+  
 }
 form button {
   background: #3b82f6;
@@ -99,7 +131,419 @@ form button {
   padding: 10px;
   border: none;
   cursor: pointer;
+  width:40%;
+  margin:auto;
 }
+
+#apps h2
+{
+  font-size: 35px;
+}
+
+
+.apps
+{
+  width:10%;
+  padding:10px;
+  
+}
+.tool-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 2rem 0 2rem;
+  border:1px solid white;
+  background:white;
+}
+
+#mar h2
+{
+  color:white;
+  font-family: 'Segoe UI', sans-serif;
+  text-align:center;
+  font-size:25px;
+
+}
+
+.box
+{
+width:30%;
+
+border-radius:5px;
+margin-top:10px;
+border:1px solid white;
+display:inline-block;
+margin:1%;
+background:white;
+overflow:hidden;
+background:black;
+height:500px;
+
+}
+
+
+
+
+.image img
+{
+width:100%;
+
+
+}
+
+.image img:hover
+{
+
+    cursor:pointer;
+    transform:scale(1.05);
+    transition:0.5s;
+    
+}
+
+
+.name
+{
+
+font-size:20px;
+padding:20px;
+color:white;
+}
+
+.price
+{
+
+font-size:18px;
+color:white;
+margin-left:4%;
+
+
+}
+
+
+
+.mrd
+{
+    width:45%;
+    margin:50px;
+    border-radius:25px;
+}
+
+.mrd1
+{
+    width:45%;
+    margin:50px;
+    margin-left:50%;
+    margin-top:10%;
+    border-radius:25px;
+}
+
+.mrd2
+{
+    width:45%;
+    margin:50px;
+    margin-top:8%;
+    border-radius:25px;
+}
+
+#col
+{
+    width:40%;
+    margin-left:55%;
+    margin-top:-33%;
+    font-size:25px;
+    box-shadow:5px 5px 5px solid rgb(241, 1, 1);
+   
+}
+
+#col h2
+{
+    color:rgb(11, 122, 212);
+}
+
+#col p
+{
+    text-align:justify;
+    color:white;
+    font-size:20px;
+}
+
+.btn
+{
+  
+  padding:1rem 2.8rem;
+  background:#0ef;
+  border-radius:4rem;
+ box-shadow:0 0 1rem var(--main-color);
+  font-size:1.6rem;
+  color:black;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.btn:hover
+{
+  box-shadow:none;
+}
+
+#col1
+{
+    width:40%;
+    margin-left:5%;
+    margin-top:-30%;
+    font-size:25px;
+    box-shadow:5px 5px 5px solid rgb(241, 1, 1);
+   
+}
+
+#col1 p
+{
+    text-align:justify;
+    color:white;
+    font-size:20px;
+}
+
+#col1 h2
+{
+    color:rgb(11, 122, 212);
+}
+
+#col2
+{
+    width:40%;
+    margin-left:55%;
+    margin-top:-34%;
+    font-size:25px;
+    box-shadow:5px 5px 5px solid rgb(241, 1, 1);
+   
+}
+
+#col2 h2
+{
+    color:rgb(11, 122, 212);
+}
+
+#col2 p
+{
+    text-align:justify;
+    color:white;
+    font-size:20px;
+}
+
+@media (max-width: 450px)
+{
+  .apps
+{
+  width:25%;
+  padding:5px;
+  
+}
+.tool-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 2rem 0 2rem;
+  border:1px solid white;
+  background:white;
+  border-radius: 10%;
+}
+
+.mrd
+{
+    width:100%;
+    margin:auto;
+    border-radius:25px;
+}
+
+.mrd1
+{
+    width:100%;
+    margin:auto;
+   
+    border-radius:25px;
+}
+
+.mrd2
+{
+    width:100%;
+    margin:auto;
+   
+    border-radius:25px;
+}
+
+#col
+{
+    width:100%;
+    margin-left:1%;
+    margin-top:-1%;
+    font-size:25px;
+    box-shadow:5px 5px 5px solid rgb(241, 1, 1);
+   
+}
+
+#col h2
+{
+    color:rgb(11, 122, 212);
+     font-size: 25px;
+}
+
+#col p
+{
+    text-align:justify;
+    color:white;
+    font-size:20px;
+}
+
+.btn
+{
+  
+  padding:1rem 2rem;
+  background:#0ef;
+  border-radius:4rem;
+ box-shadow:0 0 1rem var(--main-color);
+  font-size:1rem;
+  color:black;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.btn:hover
+{
+  box-shadow:none;
+}
+
+#col1
+{
+    width:100%;
+    margin-left:1%;
+    margin-top:-1%;
+    font-size:25px;
+    box-shadow:5px 5px 5px solid rgb(241, 1, 1);
+   
+}
+
+#col1 p
+{
+    text-align:justify;
+    color:white;
+    font-size:20px;
+}
+
+#col1 h2
+{
+    color:rgb(11, 122, 212);
+    font-size: 25px;
+}
+
+#col2
+{
+    width:100%;
+    margin-left:1%;
+    margin-top:-1%;
+    font-size:25px;
+    box-shadow:5px 5px 5px solid rgb(241, 1, 1);
+   
+}
+
+#col2 h2
+{
+    color:rgb(11, 122, 212);
+    font-size: 25px;
+}
+
+#col2 p
+{
+    text-align:justify;
+    color:white;
+    font-size:20px;
+}
+
+.box
+{
+width:100%;
+
+border-radius:5px;
+margin-top:10px;
+border:1px solid white;
+display:inline-block;
+margin:1%;
+background:white;
+overflow:hidden;
+background:black;
+height:500px;
+
+}
+
+
+
+
+.image img
+{
+width:100%;
+
+
+}
+
+.image img:hover
+{
+
+    cursor:pointer;
+    transform:scale(1.05);
+    transition:0.5s;
+    
+}
+
+
+.name
+{
+
+font-size:20px;
+padding:20px;
+color:white;
+}
+
+.price
+{
+
+font-size:18px;
+color:white;
+margin-left:4%;
+
+
+}
+
+.feature-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 2rem 0 1rem;
+}
+.feature {
+  background: black;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  color:white;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px  solid white;
+
+}
+.pic
+{
+    width:35%;
+    margin-top:-10%;
+
+}
+
+}
+
 </style>
 <body>
 
@@ -160,6 +604,118 @@ form button {
     </div>
     
   </section>
+
+  <section id="apps">
+    <h2>AI Apps</h2>
+    <div class="tool-boxes">
+      <img src="images/chat.png" class="apps">
+     <img src="images/grok.png" class="apps">
+      <img src="images/canva.png" class="apps">
+      <img src="images/mid.png" class="apps">
+      <br/>
+      <img src="images/syn.png" class="apps">
+       <img src="images/gem.png" class="apps">
+      
+      <img src="images/dall.png" class="apps">
+     
+    </div>
+    
+  </section>
+
+  
+<div id="side-statement">
+<img src="images/s3.jpg" class="mrd">
+<div id="col">
+    <h2>Revamp your website to boost conversions and increase pipeline.</h2>
+    <br/>
+    <p>By enhancing user experience, optimizing performance, and implementing scalable design, our website redesigns help you attract more visitors, convert leads, and drive sustainable growth.</p>
+     <br/>
+    <a href="#" class="btn">Learn More</a>
+      <br/>
+      <br/>
+
+</div>
+</div>
+<img src="images/s2.jpg" class="mrd1">
+<div id="col1">
+    <h2>Seamless Website Migrations without the headaches.</h2>
+    <br/>
+    <p>Migrate your website to a modern platform with minimal downtime and maximum efficiency. From planning to execution, we ensure your migration is seamless, secure, and aligned with your business goals.</p>
+     <br/>
+    <a href="#" class="btn">Learn More</a>
+      <br/>
+    <br/>
+
+</div>
+
+<img src="images/s1.jpg" class="mrd2"> 
+<div id="col2">
+    <h2>Get a dedicated Website Product Team to drive continuous growth.</h2>
+    <br/>
+    <p>Get a tailored Website Product Team to help you continuously manage, optimize, and scale your website. Taking an agile, data-driven approach, we ensure your site evolves alongside your business goals. </p>
+    <br/>
+    <a href="#" class="btn">Learn More</a>
+      <br/>
+      <br/>
+
+</div> 
+<br/><br/><br/><br/><br/><br/>
+  <div id="mar">
+    <h2>Top insights for AI marketers</h2>
+  </div>
+
+  <div class="box">
+
+            <div class="image">
+            <img src="images/a1.jpg">
+            </div>
+            
+            <div class="name">
+                <b>Best AI Website Design Examples and Inspiration [2025]</b>
+            
+            </div>
+            
+            <div class="price">
+            <p>See how some of the top websites in the AI industry are enabling high growth through their website's exceptional UX and marketing strategies</p>
+             </div>
+            </div>
+
+            
+
+            <div class="box">
+
+            <div class="image">
+            <img src="images/a2.jpg">
+            </div>
+            
+            <div class="name">
+                <b>On-Page SEO Strategies for AI Companies</b>
+            
+            </div>
+            
+            <div class="price">
+            <p>Unlock the power of on-page SEO for your AI startup with proven strategies to boost rankings, drive organic traffic, and outshine competitors.</p>
+             </div>
+            </div>
+
+            <div class="box">
+
+            <div class="image">
+            <img src="images/a3.jpg">
+            </div>
+            
+            <div class="name">
+                <b>A Step-by-Step Guide to Website Migration for AI Businesses</b>
+            
+            </div>
+            
+            <div class="price">
+            <p>Unlock the secrets of seamless website migration for AI companies. Our step-by-step guide ensures a smooth transition, minimizing downtime and maximizing performance.</p>
+             </div>
+            </div>
+  
+
+  
 
   <section id="contact">
     <h2>Contact Us</h2>
