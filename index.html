@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Generative AI Platform</title>
   <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+<a name="top">
 <style>
     * {
   margin: 0;
@@ -33,6 +35,12 @@ html
 
   }
 
+  .active
+  {
+    color:var(--main-color)
+
+  }
+
 
 .pic
 {
@@ -45,6 +53,12 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+   position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 100;
+  
 }
 nav .logo {
   font-size: 24px;
@@ -349,6 +363,48 @@ margin-left:4%;
     font-size:20px;
 }
 
+.footer 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding:2rem 9%;
+  background: var(--second-bg-color);
+
+}
+
+.footer-text p
+{
+  font-size:1rem;
+  color:var(--text-color);
+
+
+}
+.footer-iconTop a
+{
+  display: inline-flex;
+  justify-items: center;
+  align-items: center;
+  padding: .8rem;
+  background: var(--main-color);
+  border-radius: .5rem;
+  text-decoration: none;
+
+}
+
+.footer-iconTop a:hover
+{
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i
+{
+font-size:2rem;
+color:var(--second-bg-color);
+
+}
+
 @media only screen and (max-width: 390px)
 {
   body{
@@ -584,6 +640,15 @@ form button{
   color:black;
   border-radius: 10px;
 }
+
+.footer{
+    flex-direction: column-reverse;
+
+  }
+  .footer p{
+    text-align: center;
+    margin-top: 2rem;
+  }
 
 }
 
@@ -828,6 +893,15 @@ form button{
   font-size:20px;
   width:60%;
 }
+
+.footer{
+    flex-direction: column-reverse;
+
+  }
+  .footer p{
+    text-align: center;
+    margin-top: 2rem;
+  }
 }
 
 
@@ -838,6 +912,7 @@ form button{
     <nav>
       <div class="logo">GenAI</div>
       <ul>
+        <li><a href="#" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -1017,6 +1092,15 @@ form button{
 
     
   </section>
+<footer class="footer">
+  <div class="footer-text">
+    <p>Copyright &Copy; 2025 by Ashutosh / All Rights</p>
+  </div>
+
+  <div class="footer-iconTop">
+    <a href="#top"><i class='bx bx-up-arrow-alt'></i></a>
+  </div>
+</footer>
 
   
 
